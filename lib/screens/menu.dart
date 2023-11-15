@@ -5,7 +5,7 @@ import 'package:shoppers_mobile/widgets/shop_card.dart';
 class MyHomePage extends StatelessWidget {
   MyHomePage({Key? key}) : super(key: key);
 
-  final List<ShopItem> shop_items = [
+  final List<ShopItem> shopItems = [
     ShopItem("Lihat Produk", Icons.checklist),
     ShopItem("Tambah Produk", Icons.add_shopping_cart),
     ShopItem("Logout", Icons.logout),
@@ -51,7 +51,7 @@ class MyHomePage extends StatelessWidget {
                 mainAxisSpacing: 10,
                 crossAxisCount: 3,
                 shrinkWrap: true,
-                children: shop_items.map((ShopItem item) {
+                children: shopItems.map((ShopItem item) {
                   // Iterasi untuk setiap item
                   return ShopCard(item);
                 }).toList(),
